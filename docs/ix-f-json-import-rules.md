@@ -13,6 +13,8 @@ There is a tick box "Allow IXP Update". Per **default** this is unticked (set to
 - If a network does not have an entry for the IX, one is added
 - If a network does not have an entry in the IX member list, the network IX entry is removed
 
+**Note**: If the IX does not list a network at all, the entry is **removed regardless of the value of `allow_ixp_update`**. Hence an entry might get deleted incidently and will not be readded if `allow_ixp_update` is set to "no".
+
 ## For IXes
 To enable IX-F JSON import, please provide a URL to your IX-F JSON export list. To do so, edit your entry and add the URL in field `LANs`. Make sure that your JSON file is [valid](https://www.ixpdb.net/en/validator/).
 
