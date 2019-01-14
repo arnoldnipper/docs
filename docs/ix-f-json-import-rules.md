@@ -16,4 +16,6 @@ There is a tick box "Allow IXP Update". Per **default** this is unticked (set to
 ## For IXes
 To enable IX-F JSON import, please provide a URL to your IX-F JSON export list. To do so, edit your entry and add the URL in field `LANs`. Make sure that your JSON file is [valid](https://www.ixpdb.net/en/validator/).
 
-**Note**: If a state is not set at all, it will be seen as `active` by default. **If state is set** the importer accepts only `active` or `connected` to qualify the entry for import. If state is set to something else, the **entry will be removed**
+**Note 1**: If a state is not set at all, it will be seen as `active` by default. **If state is set** the importer accepts only `active` or `connected` to qualify the entry for import. If state is set to something else, the **entry will be removed**
+
+**Note 2**: The values are **case sensitive**. I.e. `Active` is not the same as `active` and `Connected`is not the same as `connected`. Both `Active` and `Connected`will lead to complete deletion of all participants
