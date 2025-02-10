@@ -15,12 +15,12 @@ The first set of definitions describes object types and the second set defines t
 | --- | --- |
 | `fac` | The name of the database object representing interconnection facilities. |
 | Facility | A place where networks can connect with other networks. Some interconnection facilities are data centers or suites within data centers. Others are significantly smaller. |
-| `facix` | The name of an object derived from the intersection of a `fac` and an `ix` object. This happens when an IXP has a presence at an interconnection facility. |
+| `ixfac` | The name of an object derived from the intersection of an `ix` and a `fac` object. This object describes an IXP presence at an interconnection facility. |
 | `ix`  | The name of the database object representing IXPs. |
 | ix-f | The Internet Exchange Federation is a group of four regional IXP Associations. In the context of PeeringDB, their name is applied to the import of JSON structured data that complies with the [IX-F Member Export Schema](https://github.com/euro-ix/json-schemas). |
 | IXP | An infrastructure for interconnecting three or more Autonomous Systems. |
 | `net` | The name of the database object representing networks. |
-| `netix` | The name of an object derived from the intersection of a `net` and an `ix` object. This happens when a network is connected to an IXP. |
+| `netixlan` | The name of an object derived from the intersection of a `net` and an `ixlan` object. This object describes a network connection to an IXP. |
 | Network | An Autonomous System, as defined in [RFC 1930](https://www.rfc-editor.org/rfc/rfc1930). |
 | PeeringDB | PeeringDB is a freely available, user-maintained, database of networks, and the go-to location for interconnection data. The database facilitates the global interconnection of networks at Internet Exchange Points (IXPs), data centers, and other interconnection facilities, and is the first stop in making interconnection decisions. |
 | `poc` | A Point of Contact for a specific functional role at an organization (see below). |
